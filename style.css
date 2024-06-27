@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/foto\ fintech.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.header button {
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    background: transparent;
+    border: 1px solid white; /* Adiciona borda branca fina */
+    padding: 10px 80px; /* Ajustado para aumentar a largura */
+    font-size: 1em;
+    border-radius: 10px; /* Cantos arredondados */
+    margin: 12px;
+}
+
+.header .search-button {
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    background: transparent;
+    border: none; /* Remove a borda */
+    padding: 10px 30px; /* Ajustado para aumentar a largura */
+    padding-right: 40px;
+    border-radius: 10px; /* Cantos arredondados */
+    margin: 12px;
+}
+
+.header .search-button i {
+    font-size: 1.6em; /* Tamanho do ícone */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding-left: 200px;
+    text-align: left;
+}
+
+h1, h2, h3 {
+    margin: 1px 0; /* Espaçamento entre os títulos */
+    font-weight: 500; /* Define o peso da fonte como Extra Bold */
+    letter-spacing: -0.07em;
+    color: white;
+}
+
+h1 {
+    font-size: 5em; /* Tamanho para h1 */
+}
+
+h2 {
+    font-size: 2.5em; /* Tamanho para h2 */
+}
+
+h3 {
+    font-size: 1.8em; /* Tamanho para h3 */
+}
+
+button {
+    font-size: 2em;
+    margin: 40px 0;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: -0.07em;
+    color: white;
+    background: transparent;
+    border: 1px solid white; /* Adiciona borda branca fina */
+    padding: 10px 60px; /* Ajustado para aumentar a largura */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header button {
+        padding: 10px 40px;
+        font-size: 0.9em;
+    }
+
+    .header .search-button {
+        padding: 10px 40px;
+    }
+
+    .main-content {
+        align-items: center;
+        padding-left: 20px;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1.5em;
+        padding: 10px 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header button {
+        padding: 10px 20px;
+        font-size: 0.8em;
+    }
+
+    .header .search-button {
+        padding: 10px 20px;
+    }
+
+    .main-content {
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 1.2em;
+        padding: 10px 30px;
+    }
+}
